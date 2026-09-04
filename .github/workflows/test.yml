@@ -1,0 +1,20 @@
+name: AI DevOps Agent Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Test Application
+        run: |
+          echo "Starting application test..."
+          echo "Testing application..."
+          exit 1
