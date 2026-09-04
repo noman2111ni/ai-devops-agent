@@ -17,6 +17,7 @@ jobs:
         run: |
           echo "Starting application test..."
           echo "Testing application..."
+          exit 1
           
 
       - name: Notify n8n
